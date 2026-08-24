@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:8000/chat";
+const API_URL = "https://bubbly-celebration-production-1430.up.railway.app/chat";
 
 
 const questionInput =
@@ -102,6 +102,7 @@ async function sendMessage() {
                 // Keep default error
             }
 
+
             addMessage(
                 "Error: " + errorMessage,
                 "ai"
@@ -128,9 +129,7 @@ async function sendMessage() {
 
 
         addMessage(
-            "Unable to connect to the backend. " +
-            "Make sure FastAPI is running on " +
-            "http://127.0.0.1:8000",
+            "Unable to connect to the backend. Please try again.",
             "ai"
         );
 
