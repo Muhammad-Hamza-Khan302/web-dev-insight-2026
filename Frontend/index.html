@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WebDevInsight RAG</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background decorative elements -->
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+    <div class="background-glow glow-three"></div>
+
+    <!-- Main application -->
+    <main class="app">
+
+        <!-- Header -->
+        <header class="top-bar">
+
+            <div class="brand">
+                <div class="brand-icon">
+                    ✦
+                </div>
+
+                <div>
+                    <h1>WebDevInsight</h1>
+                    <p>RAG Assistant</p>
+                </div>
+            </div>
+
+            <div class="status">
+                <span class="status-dot"></span>
+                AI Online
+            </div>
+
+        </header>
+
+
+        <!-- Welcome screen -->
+        <section class="hero" id="hero">
+
+            <!-- Futuristic AI orb -->
+            <div class="ai-orb">
+                <div class="orb-inner">
+                    <div class="orb-face">
+                        <span class="eye left-eye"></span>
+                        <span class="eye right-eye"></span>
+                        <span class="smile"></span>
+                    </div>
+                </div>
+
+                <div class="orb-ring ring-one"></div>
+                <div class="orb-ring ring-two"></div>
+            </div>
+
+
+            <h2>
+                Ask <span>WebDevInsight</span>
+            </h2>
+
+            <p class="hero-description">
+                Your AI assistant for web development statistics,
+                trends, performance and technology insights.
+            </p>
+
+        </section>
+
+
+        <!-- Chat messages -->
+        <section class="chat-area" id="chatArea">
+
+            <!-- Messages will be added by JavaScript -->
+
+        </section>
+
+
+        <!-- Chat input -->
+        <section class="input-wrapper">
+
+            <div class="input-box">
+
+                <textarea
+                    id="questionInput"
+                    placeholder="Ask anything about web development..."
+                    rows="1"
+                ></textarea>
+
+
+                <div class="input-controls">
+
+                    <button
+                        class="icon-button"
+                        id="clearButton"
+                        title="Clear chat"
+                    >
+                        +
+                    </button>
+
+
+                    <div class="mode-selector">
+
+                        <span class="mode-icon">✎</span>
+
+                        <select id="modeSelect">
+                            <option value="normal">Normal</option>
+                            <option value="precise">Precise</option>
+                        </select>
+
+                    </div>
+
+
+                    <button
+                        class="send-button"
+                        id="sendButton"
+                        title="Send"
+                    >
+                        <span>➤</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <p class="input-note">
+                WebDevInsight uses RAG to answer from your indexed dataset.
+            </p>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+            <span>Powered by</span>
+            <strong>FastAPI</strong>
+            <span>•</span>
+            <strong>Pinecone</strong>
+            <span>•</span>
+            <strong>Groq</strong>
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
